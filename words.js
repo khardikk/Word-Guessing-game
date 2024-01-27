@@ -132,7 +132,7 @@ let wordList = [
     {
         word: "excel",
         hint: "microsoft product for windows",
-        imgsrc:"./assets/python.jpg"
+        imgsrc:"./assets/excel.PNG"
     },
     {
         word: "mysql",

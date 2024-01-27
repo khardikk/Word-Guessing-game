@@ -81,6 +81,10 @@ body{
   background: #18a589;
 }
 
+.content .hint-btn{
+  padding: 3px 10px;
+}
+
 .content img {
   max-width: 50%;
   height: auto;
