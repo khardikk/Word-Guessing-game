@@ -8,13 +8,31 @@ typingInput = document.querySelector(".typing-input");
 let word, maxGuesses, incorrectLetters = [], correctLetters = [];
 
 function randomWord() {
+
+    // Remove the previous image if it exists
+    const previousImage = document.querySelector(".content img");
+    if (previousImage) {
+        previousImage.remove();
+    }
+
     let ranItem = wordList[Math.floor(Math.random() * wordList.length)];
     word = ranItem.word;
     maxGuesses = word.length >= 5 ? 8 : 6;
-    correctLetters = []; incorrectLetters = [];
+    correctLetters = []; 
+    incorrectLetters = [];
     hintTag.innerText = ranItem.hint;
     guessLeft.innerText = maxGuesses;
     wrongLetter.innerText = incorrectLetters;
+
+ 
+
+    // Set image source if available
+    if (ranItem.imgsrc) {
+        let img = document.createElement("img");
+        img.src = ranItem.imgsrc;
+        img.alt = "Word Image";
+        document.querySelector(".content").appendChild(img);
+    }
 
     let html = "";
     for (let i = 0; i < word.length; i++) {
