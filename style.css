@@ -75,9 +75,31 @@ body{
   border-radius: 5px;
   background: #1BB295;
   transition: all 0.3s ease;
+  margin-bottom: 20px;
 }
 .content .reset-btn:hover{
   background: #18a589;
+}
+
+.content .hint-btn{
+  padding: 1px 4px;
+  color: #fff;
+  background: #1BB295;
+  border-radius: 2px;
+  border: 1.5px solid black;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.content .hint-btn:hover{
+  background: #18a589;
+}
+
+.content img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+
 }
 
 @media screen and (max-width: 460px) {
