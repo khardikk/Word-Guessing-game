@@ -82,7 +82,17 @@ body{
 }
 
 .content .hint-btn{
-  padding: 3px 10px;
+  padding: 1px 4px;
+  color: #fff;
+  background: #1BB295;
+  border-radius: 2px;
+  border: 1.5px solid black;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.content .hint-btn:hover{
+  background: #18a589;
 }
 
 .content img {
